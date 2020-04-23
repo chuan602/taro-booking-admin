@@ -1,5 +1,4 @@
 import { getConfigurations, setConfigurations } from '@/api/form'
-import { setToken } from '@/utils/auth'
 
 const getDefaultState = () => {
   return {

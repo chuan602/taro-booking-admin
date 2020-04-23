@@ -69,6 +69,27 @@ export const constantRoutes = [
     ]
   },
 
+  {
+    path: '/excel',
+    component: Layout,
+    name: 'Excel',
+    meta: { title: '导入数据', icon: 'excel' },
+    children: [
+      {
+        path: '/upload-ticket-excel',
+        name: 'TicketExcel',
+        component: () => import('@/views/excel/upload-ticket-excel'),
+        meta: { title: '导入班车数据', icon: 'ticket' }
+      },
+      {
+        path: '/upload-user-excel',
+        name: 'UserExcel',
+        component: () => import('@/views/excel/upload-user-excel'),
+        meta: { title: '导入用户数据', icon: 'user-import' }
+      }
+    ]
+  },
+
   // {
   //   path: '/example',
   //   component: Layout,

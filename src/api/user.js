@@ -4,10 +4,7 @@ export function login(data) {
   return request({
     url: '/manager/login',
     method: 'post',
-    params: data,
-    headers: {
-      'content-type': 'application/x-www-form-urlencoded'
-    }
+    data
   })
 }
 
